@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("fK6evefdIH56ZWunl");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="containerEmail">
+    <div class="sidebar sidebarGo">
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="intro.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham" src="img/ham.png" alt="ham" width="23">
+        <img class="cross" src="img/cross.png" alt="cross" width="23">
+      </div>
+      <div class="email">
+        <div class="row">
+          <div class="col-md-6 border-left py-3">
+            <h1>Email Me</h1>
+            <div class="form-group">
+              <h5 for="name">Name</h5>
+              <input type="text" class="form-control" id="name" placeholder="Enter name" />
+            </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" />
+            </div>
+            <div class="form-group">
+              <h5 for="message">Message</h5>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</body>
+
+</html>
